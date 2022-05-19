@@ -1,0 +1,97 @@
+.footer {
+    background-color: hsl(201, 11%, 90%);
+    padding: 3rem 11rem 3rem 11rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; //
+    grid-template-rows: repeat(2, 1fr);
+    height: 11rem;
+
+    @media only screen and (max-width: $Mobile) {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0 auto;
+        height: 32rem
+    }
+
+    &-logo {
+        svg {
+            transform: scale(.5);
+        }
+
+        display: grid;
+        justify-content: start;
+        align-content: start;
+        transform: translateY(-2rem); 
+        
+        @media only screen and (max-width: $Mobile) {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            transform: translateY(2rem);
+            margin-bottom: 3rem;
+        }
+    }
+
+    .attribution {
+        grid-column: 2 / span 2;
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        font-size: .8rem;
+
+        @media only screen and (max-width: $Mobile) {
+            margin: 0 auto;
+            display: flex;
+            width: 19rem;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+        }
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+
+        &--item {
+            @media only screen and (max-width: $Mobile) {
+                margin: 0 auto;
+                margin-bottom: 2rem;
+            }   
+        }
+    }
+
+    &__link--box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        @media only screen and (max-width: $Mobile) {
+            display: flex;
+            flex-direction: column;
+            width: 7rem;
+            margin-bottom: 2rem;
+            @include position;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: flex-end;
+
+        @media only screen and (max-width: $Mobile) {
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+
+        svg {
+            color: hsl(210, 10%, 33%);
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+}

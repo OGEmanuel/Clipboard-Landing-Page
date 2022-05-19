@@ -1,0 +1,68 @@
+.feature-box {
+    display: flex;
+
+    @media only screen and (max-width: $Mobile) {
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text--small {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (max-width: $Mobile) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+    .text {
+        text-align: left;
+        @media only screen and (max-width: $Mobile) {
+            text-align: center;
+        }
+    }
+
+    .text-small {
+        text-align: center;
+    }
+
+    .main-text--feature {
+        font-size: 1rem;
+        margin-bottom: .25rem;
+    }
+
+    .sub-text--feature {
+        width: 20rem;
+
+        @media only screen and (max-width: $Mobile) {
+            width: 15rem;
+        }
+    }
+
+    .sub-text__feature--queries {
+
+        @media only screen and (max-width: $Mobile) {
+            margin-bottom: 7rem;
+        }
+    }
+
+    .sub-text--small {
+        width: 18rem;
+    }
+}
+
+@media only screen and (max-width: $Mobile) {
+
+    .img {
+        margin: 0 auto;
+        width: 15rem;
+    }
+
+    .img-devices {
+        margin-bottom: 5rem;
+    }
+}

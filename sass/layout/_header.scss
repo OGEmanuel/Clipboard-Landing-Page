@@ -1,0 +1,15 @@
+.header {
+    height: 40vh;
+    width: 100vw;
+    background-image: url(/img/bg-header-desktop.png);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: $Mobile) {
+        height: 45vh;
+        background-image: url(/img/bg-header-mobile.png);
+    }
+}

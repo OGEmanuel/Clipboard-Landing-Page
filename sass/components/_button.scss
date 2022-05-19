@@ -1,0 +1,44 @@
+.section-info__button {
+    .btn {
+        padding: .7rem 1.5rem .7rem 1.5rem;
+        border-radius: 10rem;
+        text-decoration: none;
+
+        @media only screen and (max-width: $Mobile) {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            width: 15rem;
+            padding: .7rem 1rem .7rem 1rem;
+        }
+
+        &-first {
+            background-color: $color-primary;
+            margin-right: .5rem;
+            border-bottom: .2rem solid hsl(171, 66%, 40%);
+
+            @media only screen and (max-width: $Mobile) {
+                margin-right: auto;
+                margin-bottom: 1rem;
+                border-bottom: .2rem solid hsl(171, 66%, 40%);
+            }
+
+            &:hover {
+                background-color: hsl(171, 66%, 50%);
+            }
+        }
+
+        &-second {
+            background-color: $color-secondary;
+            border-bottom: .2rem solid hsl(233, 100%, 65%);
+
+            @media only screen and (max-width: $Mobile) {
+                border-bottom: .2rem solid hsl(233, 100%, 65%);
+            }
+            
+            &:hover {
+                background-color: hsl(233, 100%, 75%);
+            }
+        }
+    }
+}
