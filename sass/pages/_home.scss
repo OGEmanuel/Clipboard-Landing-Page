@@ -11,6 +11,17 @@
     margin: 0 11rem 7rem 11rem;
     justify-content: space-between;
 
+    @media only screen and (max-width: $Mobile-phone) {
+        @include position;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            margin-bottom: 5rem;
+        }
+    }
+
     @media only screen and (max-width: $Mobile) {
         @include position;
         justify-content: center;
