@@ -13,7 +13,9 @@ $color-black: #000;
 $default-font-size: 1rem;
 
 //MEDIA QUERIES
-$Desktop: 90em; //1440px div by 16px
-$Mobile-phone: 25em; //400px div by 16px
+$Desktop-small: 75em; //1200px div 16px
+$Tablet: 62.5em; //1000px div 16px
+$Tablet-small: 52.5em; //840px div 16px
+$Mobile-phone: 31.25em; //500px div by 16px
 $Mobile: 23.4375em; //375px div by 16px
 

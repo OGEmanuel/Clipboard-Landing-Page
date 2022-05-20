@@ -8,15 +8,14 @@ body {
     font-weight: 600;
     color: $color-gray-dark;
 
-    @media only screen and (max-width: $Mobile-phone) {
+    @media only screen and (max-width: $Tablet-small) {
         margin: 0 auto;
         font-size: 1.5rem;
-        width: 18rem;
+        width: 25rem;
     }
 
-    @media only screen and (max-width: $Mobile) {
-        margin: 0 auto;
-        font-size: 1.5rem;
+
+    @media only screen and (max-width: $Mobile-phone) {
         width: 18rem;
     }
 
@@ -31,6 +30,10 @@ body {
     width: 32rem;
     margin: 0 auto;
     line-height: 1.7;
+
+    @media only screen and (max-width: $Tablet-small) {
+        max-width: 25rem;
+    }
 
     @media only screen and (max-width: $Mobile-phone) {
         width: 15rem;

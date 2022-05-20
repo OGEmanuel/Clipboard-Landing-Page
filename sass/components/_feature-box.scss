@@ -1,14 +1,13 @@
 .feature-box {
+    width: 100vw;
     display: flex;
 
-    @media only screen and (max-width: $Mobile-phone) {
-        
-        display: flex;
-        flex-direction: column;
-    }
-
-    @media only screen and (max-width: $Mobile) {
-        
+    @media only screen and (max-width: $Desktop-small) {
+        &__text {
+            margin-top: 0;
+        }
+}
+    @media only screen and (max-width: $Tablet-small) {    
         display: flex;
         flex-direction: column;
     }
@@ -19,13 +18,7 @@
         justify-content: center;
         align-items: center;
 
-        @media only screen and (max-width: $Mobile-phone) {
-            display: flex;
-            flex-direction: column;
-        }
-
-        @media only screen and (max-width: $Mobile) {
-            display: flex;
+        @media only screen and (max-width: $Tablet-small) {
             flex-direction: column;
         }
     }
@@ -33,13 +26,9 @@
     .text {
         text-align: left;
 
-        @media only screen and (max-width: $Mobile-phone) {
-            text-align: center;
-        }
-
-        @media only screen and (max-width: $Mobile) {
-            text-align: center;
-        }
+        @media only screen and (max-width: $Tablet-small) {
+            text-align: center;     
+         }
     }
 
     .text-small {
@@ -52,53 +41,42 @@
     }
 
     .sub-text--feature {
-        width: 20rem;
+        max-width: 20rem;
 
-        @media only screen and (max-width: $Mobile-phone) {
+        @media only screen and (max-width: $Desktop-small) {
             width: 15rem;
-        }
-
-        @media only screen and (max-width: $Mobile) {
-            width: 15rem;
-        }
-    }
-
-    .sub-text__feature--queries {
-
-        @media only screen and (max-width: $Mobile-phone) {
-            margin-bottom: 7rem;
-        }
-
-        @media only screen and (max-width: $Mobile) {
-            margin-bottom: 7rem;
+            margin-bottom: 1.5rem;
         }
     }
 
     .sub-text--small {
-        width: 18rem;
+        max-width: 18rem;    
     }
 }
 
-@media only screen and (max-width: $Mobile-phone) {
-
-    .img {
-        margin: 0 auto;
-        width: 15rem;
+.img {
+    @media only screen and (max-width: $Desktop-small) {
+        max-width: 35rem;
+        margin-right: 3.5rem;
     }
 
-    .img-devices {
+    @media only screen and (max-width: $Tablet) {
+        max-width: 27rem;  
+    }
+
+    @media only screen and (max-width: $Tablet-small) {
+        max-width: 25rem; 
+        margin: 0 auto; 
+    }
+
+    @media only screen and (max-width: $Mobile-phone) {
+        width: 15rem;
+    }
+}
+
+.img-devices {
+    @media only screen and (max-width: $Mobile-phone) {
         margin-bottom: 5rem;
     }
 }
 
-@media only screen and (max-width: $Mobile) {
-
-    .img {
-        margin: 0 auto;
-        width: 15rem;
-    }
-
-    .img-devices {
-        margin-bottom: 5rem;
-    }
-}

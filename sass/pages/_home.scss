@@ -4,29 +4,44 @@
 
 .section-features {
     @include position;
+    //flex-wrap: wrap;
 }
 
 .section-partners {
     display: flex;
     margin: 0 11rem 7rem 11rem;
     justify-content: space-between;
+    flex-wrap: wrap;
 
-    @media only screen and (max-width: $Mobile-phone) {
-        @include position;
+    @media only screen and (max-width: $Desktop-small) {
+        width: 100vw;
+        margin: 0 auto;
+        padding: 0 10rem 0 10rem;    
         justify-content: center;
+
+        .logo {
+            padding-right: 5rem;
+            margin-bottom: 5rem;
+        }
+     }
+
+     @media only screen and (max-width: $Tablet-small) {
+        @include position;
         display: flex;
         flex-direction: column;
+        padding: 0;
+
+        .logo {
+            padding-right: 0;
+        }
 
         img {
             margin-bottom: 5rem;
         }
     }
 
-    @media only screen and (max-width: $Mobile) {
-        @include position;
+    @media only screen and (max-width: $Mobile-phone) {
         justify-content: center;
-        display: flex;
-        flex-direction: column;
 
         img {
             margin-bottom: 5rem;

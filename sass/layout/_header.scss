@@ -8,7 +8,10 @@
     justify-content: center;
     align-items: center;
 
-    @media only screen and (max-width: $Mobile) {
+    @media only screen and (max-width: $Tablet-small) {
+        svg {
+            transform: scale(.7);
+        }
         height: 45vh;
         background-image: url(/img/bg-header-mobile.png);
     }
